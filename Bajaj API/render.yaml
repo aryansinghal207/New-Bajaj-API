@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: bfhl-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: BFHL_USER_FULL_NAME
+        value: Aryan Singhal
+      - key: BFHL_USER_DOB
+        value: "29092004"
+      - key: BFHL_USER_EMAIL
+        value: aryansinghal207@gmail.com
+      - key: BFHL_USER_ROLL_NUMBER
+        value: "2310990133"
