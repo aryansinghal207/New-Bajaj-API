@@ -3,6 +3,7 @@ services:
     name: bfhl-api
     runtime: docker
     plan: free
+    rootDir: Bajaj API
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /health
